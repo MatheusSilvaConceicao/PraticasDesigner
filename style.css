@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100;1,300&display=swap');
+
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-position: center;
+    background-image: url("images/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header {
+    width: 100vw;
+    background-color: #46295a;
+}
+
+iframe {
+    display: block;
+    border-radius: 5px;
+    border: 2px solid #fff
+}
+nav{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    color: #fff;
+    width: 100vw;
+}
+
+nav > span {
+    width: 70%;
+    font-size: 24px;
+    margin: 10px;
+
+
+}
+
+
+ul {
+    display: flex;
+    width: 30%;
+    padding: 50px 0;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+    transition: .1s ease-in;
+    /* margin-top: 25px; */
+}
+
+li:hover{
+    font-weight: 700;
+    text-underline-offset: 10px;
+    text-decoration: underline;
+}
+
+
+a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 24px;
+}
+h1{
+    justify-content: center;
+    text-align: center;
+    color:#ffffff
+}
+.text-home{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: rgb(70, 41, 90, 0.5);
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 20px;
+    transition: .4s ease all;
+    margin-top: 200px;
+
+
+}
+.text-home:hover{
+    scale:1.2;
+
+}
+.text{
+    /* width: 800px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap:100px;
+    justify-content: end;
+    width: 100%;
+    /* margin: 0 10px; */
+}
+main {
+    width: 100vw;
+}
+
+
+
+.btnprimary{
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight:bold;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease;
+
+}
+.btnprimary:hover{
+    background-color: #fff;
+    color: #46295a;
+    letter-spacing: 5px;
+}
+
+/* Localização */
+
+.container-geral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 900px;
+    
+}
+
+.container-localization{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 900px;
+    background-color:rgba(70, 41, 90, 0.705);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+    border:1px solid #fff ;
+    transition: .4s ease;
+
+}
+.container-localization:hover {
+    scale: 1.1;
+    
+}
+.container-pi{
+    display: flex;
+    flex-direction: row;
+    border-radius:5px;
+    height: auto;
+
+}
+.container-localization p {
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+.container-localization h2 {
+    padding: 15px;
+    font-size: 28px;
+}
+address {
+    font-style: normal;
+    padding-right: 20px;
+    height: auto;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    margin-right:15px;
+    border-radius: 15px;
+
+}
+.phone {
+    font-size: 18px;
+    padding: 15px;
+}
+.phone:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+address:hover {
+    font-weight: bold;
+}
+/* Cardapio */
+
+
+
+.main-total {
+    display: grid;
+    grid-template-columns:repeat(4,25%);
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+}
+
+.titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 30px;
+    background-color: rgba(70, 41, 90, 0.905);
+    width: 600px;
+    border-radius:  0 0 20px  20px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+
+.imglegenda {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    transition: .2s ease-in all;
+}
+
+
+.imglegenda:hover{
+    transform: scale(1.03);
+}
+
+.imglegenda > span{
+    background: #fff;
+    width: 205px;
+    height: 50px;
+    border: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    padding: 5px 0;
+    letter-spacing: 3px;
+    margin-top: -25px;
+    position: relative;
+    z-index: -10;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.food{
+    /* padding: 10px 5px 40px 5px; */
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    position:absolute;
+    bottom:0;
+    text-align: center;
+    color: #fff;
+}
+.logotipo {
+    width: 100px;
+    height: 100px;
+    
+}
+@media (max-width: 1024px) {
+    header {width: 100%}
+    nav {
+        width: 100%;
+    }
+
+    ul {
+        margin: 0 100px;
+    }
+}
+
+    @media (max-width: 768px) {
+        header {
+            width: 100%
+        }
+        nav {
+            width: 100%;
+        }
+    
+        ul {
+            padding: 50px 60px;
+        }
+    }
+
+    @media (max-width: 425px) {
+        .text {
+            width: 100%;
+            margin: 0 10px;
+        }
+    }
